@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: local
+
+  tasks:
+  - name: Compress directory /path/to/foo/ into /path/to/foo.tgz
+    my_archive:
+      path: files/myfile.txt
+      dest: files/myarchive.tgz
